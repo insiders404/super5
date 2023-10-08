@@ -1,0 +1,21 @@
+echo "Enter a number"
+read n
+x=1
+echo "The even numbers upto $n are : "
+while [ $x -le $n ]
+do
+if(( $x%2==0 ))
+then
+echo $x
+fi
+x=$[$x+1]
+done
+x=1
+echo "The odd numbers upto $n are : "
+while [ $x -le $n ]
+do
+if(( $x%2!=0 ))
+then
+echo $x
+fi
+x=$[$x+1]
